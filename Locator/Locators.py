@@ -1,4 +1,4 @@
-#Main Page Elements
+#Page Elements
 search_bar = "class=desktopOldAutosuggestTheme-input"  # Arama barı
 search_button = "class=SearchBoxOld-buttonContainer"  # Arama barı üzerinde ara butonu
 select_product = "class=product-image-wrapper"  # Ürün listesinden ürün seçip, ürün detayına gitme
