@@ -13,6 +13,9 @@ Test Akışı
 Kullanılan terimler ve kütüphanelerden öne çıkan anahtar kelimeler;
 
 Page Object Modal
+
 session open/close
+
 run keyword and return status
+
 run keyword if
