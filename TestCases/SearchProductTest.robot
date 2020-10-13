@@ -2,7 +2,6 @@
 Resource  ../Resource/Utils.robot
 Resource  ../Resource/SearchProductKeywords.robot
 Library  SeleniumLibrary
-Library  DebugLibrary
 Test Setup  Utils.start session
 Test Teardown  Utils.close session
 
