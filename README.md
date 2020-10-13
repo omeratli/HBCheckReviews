@@ -1,4 +1,4 @@
-Test Akışı
+# Testin Akışı
 
 1. Hepsiburada.com sitesini ziyaret eder.
 
@@ -10,12 +10,12 @@ Test Akışı
 
 5. Yorum varsa ilk yorumu beğenir, yoksa testi sonlandırır.
 
-Kullanılan terimler ve kütüphanelerden öne çıkan anahtar kelimeler;
+### Kullanılan terimler ve kütüphanelerden öne çıkan anahtar kelimeler;
 
-Page Object Modal
+* Page Object Modal
 
-session open/close
+* session open/close
 
-run keyword and return status
+* run keyword and return status
 
-run keyword if
+* run keyword if
