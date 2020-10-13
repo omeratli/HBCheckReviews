@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20201013 12:53:48.889" rpa="false">
+<suite id="s1" name="SearchProductTest" source="C:\GitHub\HBStudy\TestCases\SearchProductTest.robot">
+<test id="s1-t1" name="Search Product">
+<kw name="start session" library="Utils" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201013 12:53:49.364" level="INFO">Opening browser 'chrome' to base url 'https://www.hepsiburada.com/'.</msg>
+<status status="PASS" starttime="20201013 12:53:49.364" endtime="20201013 12:53:55.212"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201013 12:53:55.212" endtime="20201013 12:53:57.498"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:49.364" endtime="20201013 12:53:57.498"></status>
+</kw>
+<kw name="Search and Enter Product" library="SearchProductKeywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Input Text</arg>
+<arg>${search_bar}</arg>
+<arg>${product}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search_bar}</arg>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20201013 12:53:57.500" level="INFO">Typing text 'iphone' into text field 'class=desktopOldAutosuggestTheme-input'.</msg>
+<status status="PASS" starttime="20201013 12:53:57.500" endtime="20201013 12:53:57.742"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:57.499" endtime="20201013 12:53:57.742"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Click Element</arg>
+<arg>${search_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_button}</arg>
+</arguments>
+<msg timestamp="20201013 12:53:57.744" level="INFO">Clicking element 'class=SearchBoxOld-buttonContainer'.</msg>
+<status status="PASS" starttime="20201013 12:53:57.743" endtime="20201013 12:53:57.932"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:57.742" endtime="20201013 12:53:57.933"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:57.499" endtime="20201013 12:53:57.933"></status>
+</kw>
+<kw name="Select Product" library="SearchProductKeywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Click Element</arg>
+<arg>${select_product}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+</arguments>
+<msg timestamp="20201013 12:53:57.937" level="INFO">Clicking element 'class=product-image-wrapper'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201013 12:54:00.354" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-460.png"&gt;&lt;img src="selenium-screenshot-460.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201013 12:53:59.390" endtime="20201013 12:54:00.355"></status>
+</kw>
+<msg timestamp="20201013 12:54:00.358" level="FAIL">Element with locator 'class=product-image-wrapper' not found.</msg>
+<status status="FAIL" starttime="20201013 12:53:57.937" endtime="20201013 12:54:00.359"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_product}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:01.360" level="INFO">Clicking element 'class=product-image-wrapper'.</msg>
+<status status="PASS" starttime="20201013 12:54:01.360" endtime="20201013 12:54:02.449"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:57.936" endtime="20201013 12:54:02.449"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:57.935" endtime="20201013 12:54:02.450"></status>
+</kw>
+<kw name="Click ReviewsTab" library="SearchProductKeywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Mouse Over</arg>
+<arg>${productReviewsTab}</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${productReviewsTab}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:02.451" level="INFO">Simulating Mouse Over on element 'id=productReviewsTab'.</msg>
+<status status="PASS" starttime="20201013 12:54:02.451" endtime="20201013 12:54:03.631"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:02.450" endtime="20201013 12:54:03.631"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Click Element</arg>
+<arg>${productReviewsTab}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${productReviewsTab}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:03.632" level="INFO">Clicking element 'id=productReviewsTab'.</msg>
+<status status="PASS" starttime="20201013 12:54:03.632" endtime="20201013 12:54:03.690"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:03.632" endtime="20201013 12:54:03.690"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:02.450" endtime="20201013 12:54:03.691"></status>
+</kw>
+<kw name="Visible and Vote Reviews" library="SearchProductKeywords">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Element Should Be Visible</arg>
+<arg>${productReviewsContentHolder}</arg>
+</arguments>
+<assign>
+<var>${IsReviewsVisible}</var>
+</assign>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${productReviewsContentHolder}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:03.729" level="INFO">Element 'class=paginationContentHolder' is displayed.</msg>
+<status status="PASS" starttime="20201013 12:54:03.692" endtime="20201013 12:54:03.729"></status>
+</kw>
+<msg timestamp="20201013 12:54:03.729" level="INFO">${IsReviewsVisible} = True</msg>
+<status status="PASS" starttime="20201013 12:54:03.692" endtime="20201013 12:54:03.729"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${IsReviewsVisible}</arg>
+</arguments>
+<status status="PASS" starttime="20201013 12:54:03.729" endtime="20201013 12:54:03.730"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${IsReviewsVisible}== False</arg>
+<arg>log to console</arg>
+<arg>Yorum Bulunumadı.</arg>
+<arg>ELSE</arg>
+<arg>Go Reviews</arg>
+</arguments>
+<kw name="Go Reviews" library="SearchProductKeywords">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${productReviewsVote}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:03.731" level="INFO">Simulating Mouse Over on element 'class=ReviewCard-module-1MoiF'.</msg>
+<status status="PASS" starttime="20201013 12:54:03.731" endtime="20201013 12:54:04.037"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${productReviewsVote}</arg>
+</arguments>
+<msg timestamp="20201013 12:54:04.038" level="INFO">Clicking element 'class=ReviewCard-module-1MoiF'.</msg>
+<status status="PASS" starttime="20201013 12:54:04.037" endtime="20201013 12:54:04.188"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>30</arg>
+<arg>1</arg>
+<arg>Element Text Should Be</arg>
+<arg>${MessageAfterVote}</arg>
+<arg>Teşekkür Ederiz.</arg>
+</arguments>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MessageAfterVote}</arg>
+<arg>Teşekkür Ederiz.</arg>
+</arguments>
+<msg timestamp="20201013 12:54:04.190" level="INFO">Verifying element 'class=ReviewCard-module-1ZiTv' contains exact text 'Teşekkür Ederiz.'.</msg>
+<status status="PASS" starttime="20201013 12:54:04.189" endtime="20201013 12:54:04.456"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:04.188" endtime="20201013 12:54:04.456"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:03.730" endtime="20201013 12:54:04.456"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:03.730" endtime="20201013 12:54:04.456"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:03.691" endtime="20201013 12:54:04.457"></status>
+</kw>
+<kw name="close session" library="Utils" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201013 12:54:04.458" endtime="20201013 12:54:06.644"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:54:04.457" endtime="20201013 12:54:06.644"></status>
+</kw>
+<status status="PASS" starttime="20201013 12:53:49.363" endtime="20201013 12:54:06.645" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201013 12:53:48.891" endtime="20201013 12:54:06.647"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="SearchProductTest">SearchProductTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
